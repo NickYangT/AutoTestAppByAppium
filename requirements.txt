@@ -1,0 +1,1 @@
+appium-python-cleint==0.50
