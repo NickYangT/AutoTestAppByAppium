@@ -39,6 +39,11 @@ class AutoDriver:
             12: " December"
         }
 
+
+    def __del__(self):
+        self.driver.quit()
+
+
     def get_size(self):
         x = self.driver.get_window_size()["width"]
         y = self.driver.get_window_size()["height"]
@@ -92,7 +97,4 @@ class AutoDriver:
             print("验证成功")
         else:
             print("验证失败")
-            
-    def __del__(self):
-        self.driver.quit()
 
