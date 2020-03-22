@@ -92,4 +92,7 @@ class AutoDriver:
             print("验证成功")
         else:
             print("验证失败")
+            
+    def __del__(self):
+        self.driver.quit()
 
